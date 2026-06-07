@@ -1,30 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>HINDCHIP | AI Computing For India</title>
 
-<meta name="description" content="HINDCHIP is building India's future in AI infrastructure, advanced computing and semiconductor technologies.">
-
-<meta name="keywords" content="AI Computing India, Semiconductor India, Advanced Computing, HindChip, Artificial Intelligence Infrastructure">
-
-<meta name="author" content="HINDCHIP">
+<meta name="description" content="Building India's next generation AI computing infrastructure and semiconductor technologies.">
 
 <meta property="og:title" content="HINDCHIP | AI Computing For India">
-<meta property="og:description" content="Building India's AI Computing Future">
+<meta property="og:description" content="Building India's Next Generation Computing Infrastructure">
 <meta property="og:image" content="assets/og-image.svg">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://hindchip.com">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="HINDCHIP | AI Computing For India">
-<meta name="twitter:description" content="Building India's AI Computing Future">
-<meta name="twitter:image" content="assets/og-image.svg">
-
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="site.webmanifest">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,353 +23,305 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
-  :root{
-    --bg:#040F1A;
-    --surface:#081625;
-    --surface-2:#0E2135;
-    --primary:#008BFF;
-    --text:#FFFFFF;
-    --muted:#A3B0BC;
-    --border:rgba(255,255,255,.08);
-}
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:'Inter',sans-serif;
-    background:var(--bg);
-    color:var(--text);
-    overflow-x:hidden;
-    line-height:1.7;
+font-family:'Inter',sans-serif;
+background:#020b16;
+color:#ffffff;
+line-height:1.7;
+overflow-x:hidden;
 }
 
-a{
-    text-decoration:none;
-}
-
-img{
-    max-width:100%;
-    display:block;
+body::before{
+content:'';
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at 80% 20%, rgba(0,120,255,.18), transparent 40%);
+pointer-events:none;
+z-index:-1;
 }
 
 .container{
-    width:min(1280px,92%);
-    margin:auto;
+width:min(1200px,90%);
+margin:auto;
 }
 
 section{
-    padding:120px 0;
+padding:120px 0;
 }
 
 .section-label{
-    color:var(--primary);
-    text-transform:uppercase;
-    letter-spacing:3px;
-    font-size:.85rem;
-    font-weight:700;
-    margin-bottom:18px;
+font-size:.75rem;
+letter-spacing:4px;
+text-transform:uppercase;
+font-weight:700;
+color:#0d86ff;
+margin-bottom:20px;
 }
 
-.section-title{
-    font-size:3rem;
-    line-height:1.15;
-    margin-bottom:24px;
+h1{
+font-size:clamp(3rem,8vw,5.5rem);
+line-height:1.05;
+font-weight:800;
 }
 
-.section-description{
-    color:var(--muted);
-    font-size:1.1rem;
-    max-width:850px;
+h2{
+font-size:clamp(2.3rem,6vw,4rem);
+line-height:1.1;
+font-weight:800;
+margin-bottom:30px;
+}
+
+p{
+font-size:1.1rem;
+color:#a9b5c8;
 }
 
 .grid{
-    display:grid;
-    gap:24px;
+display:grid;
+gap:30px;
 }
 
 .card{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:20px;
-    padding:32px;
-    transition:.3s;
+background:rgba(7,18,35,.75);
+border:1px solid rgba(255,255,255,.06);
+border-radius:24px;
+padding:35px;
+backdrop-filter:blur(12px);
+transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-6px);
-    border-color:rgba(0,139,255,.45);
-}
-
-.card h3{
-    margin-bottom:14px;
-    font-size:1.3rem;
-}
-
-.card p{
-    color:var(--muted);
-}
-
-.navbar{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:1000;
-
-    backdrop-filter:blur(14px);
-
-    background:rgba(4,15,26,.85);
-
-    border-bottom:1px solid rgba(255,255,255,.05);
-}
-
-.nav-container{
-    width:min(1400px,94%);
-    margin:auto;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-
-    padding:18px 0;
-}
-
-.brand{
-    display:flex;
-    align-items:center;
-    gap:14px;
-}
-
-.brand-logo{
-    width:42px;
-    height:42px;
-}
-
-.brand-name{
-    color:white;
-    font-weight:800;
-    letter-spacing:1px;
-}
-
-.nav-links{
-    display:flex;
-    gap:32px;
-}
-
-.nav-links a{
-    color:#D6DDE5;
-    font-size:.95rem;
-}
-
-.nav-links a:hover{
-    color:var(--primary);
-}
-  .hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    position:relative;
-    overflow:hidden;
-}
-
-.hero::before{
-    content:"";
-    position:absolute;
-    width:700px;
-    height:700px;
-    right:-200px;
-    top:-150px;
-    background:rgba(0,139,255,.12);
-    filter:blur(120px);
-    border-radius:50%;
-}
-
-.hero-grid{
-    display:grid;
-    grid-template-columns:1.2fr 1fr;
-    gap:60px;
-    align-items:center;
-}
-
-.hero-label{
-    color:var(--primary);
-    text-transform:uppercase;
-    letter-spacing:4px;
-    font-size:.85rem;
-    font-weight:700;
-    margin-bottom:20px;
-}
-
-.hero h1{
-    font-size:4.8rem;
-    line-height:1.05;
-    margin-bottom:24px;
-}
-
-.hero p{
-    color:var(--muted);
-    font-size:1.2rem;
-    max-width:700px;
-    margin-bottom:36px;
-}
-
-.hero-actions{
-    display:flex;
-    gap:16px;
-    flex-wrap:wrap;
+transform:translateY(-6px);
+border-color:rgba(13,134,255,.4);
 }
 
 .btn{
-    padding:16px 28px;
-    border-radius:12px;
-    font-weight:700;
-    display:inline-block;
+display:inline-block;
+padding:16px 30px;
+border-radius:14px;
+font-weight:700;
+text-decoration:none;
+transition:.3s;
 }
 
 .btn-primary{
-    background:var(--primary);
-    color:white;
+background:#0d86ff;
+color:white;
+}
+
+.btn-primary:hover{
+transform:translateY(-2px);
 }
 
 .btn-secondary{
-    border:1px solid rgba(255,255,255,.15);
-    color:white;
+border:1px solid rgba(255,255,255,.12);
+color:white;
 }
 
-.hero-visual{
-    display:flex;
-    justify-content:center;
+.btn-secondary:hover{
+border-color:#0d86ff;
+}
+  header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+background:rgba(2,11,22,.92);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(255,255,255,.05);
 }
 
-.hero-visual img{
-    width:100%;
-    max-width:520px;
+.navbar{
+height:80px;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
 
-.metrics{
-    padding:40px 0 80px;
+.logo{
+display:flex;
+align-items:center;
+gap:14px;
+text-decoration:none;
+color:white;
+font-weight:800;
+letter-spacing:1px;
 }
 
-.metrics-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:24px;
+.logo img{
+height:34px;
+width:auto;
 }
 
-.metric{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:18px;
-    padding:28px;
+.nav-links{
+display:flex;
+gap:30px;
 }
 
-.metric-number{
-    font-size:2.5rem;
-    font-weight:800;
-    color:var(--primary);
+.nav-links a{
+color:#c9d3e3;
+text-decoration:none;
+font-size:.95rem;
+transition:.3s;
 }
 
-.metric-label{
-    color:var(--muted);
-    margin-top:10px;
+.nav-links a:hover{
+color:#0d86ff;
 }
 
-.platform-grid,
-.research-grid,
-.application-grid{
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+padding-top:120px;
 }
 
-footer{
-    padding:80px 0;
-    border-top:1px solid var(--border);
-    text-align:center;
+.hero-grid{
+display:grid;
+grid-template-columns:1.2fr 1fr;
+gap:80px;
+align-items:center;
 }
 
-.footer-logo{
-    width:80px;
-    margin:0 auto 20px;
+.hero p{
+font-size:1.2rem;
+margin:30px 0;
+max-width:700px;
 }
 
-.footer-title{
-    font-size:2rem;
-    font-weight:800;
-    margin-bottom:10px;
+.hero-actions{
+display:flex;
+gap:18px;
+margin-top:40px;
+flex-wrap:wrap;
 }
 
-.footer-tag{
-    color:var(--primary);
-    margin-bottom:16px;
+.hero-graphic{
+display:flex;
+justify-content:center;
+align-items:center;
 }
 
-.footer-text{
-    color:var(--muted);
+.hero-graphic img{
+width:100%;
+max-width:450px;
 }
 
-@media(max-width:1000px){
-
-    .hero-grid{
-        grid-template-columns:1fr;
-        text-align:center;
-    }
-
-    .hero-actions{
-        justify-content:center;
-    }
-
-    .metrics-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .hero h1{
-        font-size:3.3rem;
-    }
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+margin-top:80px;
 }
 
-@media(max-width:700px){
-
-    .nav-links{
-        display:none;
-    }
-
-    .section-title{
-        font-size:2.2rem;
-    }
-
-    .hero h1{
-        font-size:2.5rem;
-    }
-
-    .metrics-grid{
-        grid-template-columns:1fr;
-    }
+.stat{
+padding:35px;
+border-radius:20px;
+background:rgba(7,18,35,.75);
+border:1px solid rgba(255,255,255,.05);
 }
-  </style>
+
+.stat h3{
+font-size:3rem;
+color:#0d86ff;
+margin-bottom:10px;
+}
+
+.two-column{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.cards-3{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.cards-3 .card h3{
+margin-bottom:15px;
+font-size:1.5rem;
+}
+
+.footer{
+text-align:center;
+padding:80px 0;
+border-top:1px solid rgba(255,255,255,.05);
+}
+
+.footer img{
+height:70px;
+margin-bottom:20px;
+}
+
+.contact-card{
+text-align:center;
+max-width:900px;
+margin:auto;
+}
+
+.contact-card p{
+margin:15px 0;
+}
+
+@media(max-width:900px){
+
+.hero-grid,
+.two-column{
+grid-template-columns:1fr;
+}
+
+.stats{
+grid-template-columns:repeat(2,1fr);
+}
+
+.cards-3{
+grid-template-columns:1fr;
+}
+
+.nav-links{
+gap:15px;
+font-size:.85rem;
+}
+
+h1{
+font-size:3rem;
+}
+
+h2{
+font-size:2.4rem;
+}
+
+}
+
+</style>
 </head>
 
 <body>
-  <header class="navbar">
+  <header>
 
-    <div class="nav-container">
+    <div class="container navbar">
 
-        <a href="#" class="brand">
+        <a href="#" class="logo">
 
-            <img
-                src="assets/hc-monogram.svg"
-                alt="HINDCHIP"
-                class="brand-logo">
+            <img src="assets/hc-monogram.svg" alt="HINDCHIP">
 
-            <span class="brand-name">
-                HINDCHIP
-            </span>
+            <span>HINDCHIP</span>
 
         </a>
 
@@ -405,8 +347,8 @@ footer{
 
             <div>
 
-                <div class="hero-label">
-                    AI Computing For India
+                <div class="section-label">
+                    AI COMPUTING FOR INDIA
                 </div>
 
                 <h1>
@@ -414,10 +356,10 @@ footer{
                 </h1>
 
                 <p>
-                    HINDCHIP is focused on advanced AI infrastructure,
+                    HINDCHIP is building advanced AI infrastructure,
                     intelligent computing systems and future semiconductor
-                    technologies designed for India's next generation of
-                    innovation, industry and national capability.
+                    technologies designed for India's next era of innovation,
+                    industrial competitiveness and national capability.
                 </p>
 
                 <div class="hero-actions">
@@ -434,52 +376,36 @@ footer{
 
             </div>
 
-            <div class="hero-visual">
+            <div class="hero-graphic">
 
                 <img
                     src="assets/chip-hero.svg"
-                    alt="Semiconductor Technology">
+                    alt="AI Semiconductor Technology">
 
             </div>
 
         </div>
 
-    </div>
+        <div class="stats">
 
-</section>
-
-<section class="metrics">
-
-    <div class="container">
-
-        <div class="metrics-grid">
-
-            <div class="metric">
-                <div class="metric-number">01</div>
-                <div class="metric-label">
-                    National Technology Mission
-                </div>
+            <div class="stat">
+                <h3>01</h3>
+                <p>National Technology Mission</p>
             </div>
 
-            <div class="metric">
-                <div class="metric-number">03</div>
-                <div class="metric-label">
-                    Strategic Technology Domains
-                </div>
+            <div class="stat">
+                <h3>03</h3>
+                <p>Strategic Technology Domains</p>
             </div>
 
-            <div class="metric">
-                <div class="metric-number">10+</div>
-                <div class="metric-label">
-                    Research Themes
-                </div>
+            <div class="stat">
+                <h3>10+</h3>
+                <p>Research Themes</p>
             </div>
 
-            <div class="metric">
-                <div class="metric-number">100%</div>
-                <div class="metric-label">
-                    Built For India
-                </div>
+            <div class="stat">
+                <h3>100%</h3>
+                <p>Built For India</p>
             </div>
 
         </div>
@@ -495,18 +421,38 @@ footer{
             About HindChip
         </div>
 
-        <h2 class="section-title">
-            Technology Infrastructure For The AI Era
-        </h2>
+        <div class="two-column">
 
-        <p class="section-description">
-            HINDCHIP is the technology brand of Hindustan Chip Technologies
-            Private Limited. We believe advanced computing technologies will
-            define the next generation of economic growth, scientific
-            discovery, industrial competitiveness and national capability.
-            Our mission is to help India become a creator of world-class
-            computing technologies rather than merely a consumer of them.
-        </p>
+            <div>
+
+                <h2>
+                    Technology Infrastructure For The AI Era
+                </h2>
+
+            </div>
+
+            <div>
+
+                <p>
+                    HINDCHIP is the technology brand of Hindustan Chip Technologies
+                    Private Limited. We believe advanced computing technologies
+                    will define the next generation of economic growth,
+                    scientific discovery, industrial competitiveness and
+                    national capability.
+                </p>
+
+                <br>
+
+                <p>
+                    Our mission is to help India become a creator of
+                    world-class computing technologies rather than merely a
+                    consumer of them. We focus on the long-term foundations
+                    required to power intelligent systems at scale.
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
 
@@ -517,60 +463,156 @@ footer{
     <div class="container">
 
         <div class="section-label">
-            Strategic Platforms
+            Strategic Technology Domains
         </div>
 
-        <h2 class="section-title">
-            Core Technology Domains
+        <h2>
+            Core Technology Platforms
         </h2>
 
-        <div class="grid platform-grid">
+        <div class="cards-3">
 
             <div class="card">
+
                 <h3>AI Infrastructure</h3>
+
                 <p>
                     Computing systems designed to support modern artificial
-                    intelligence workloads and intelligent applications.
+                    intelligence workloads, model development and intelligent
+                    applications at scale.
                 </p>
+
             </div>
 
             <div class="card">
+
                 <h3>Advanced Computing</h3>
+
                 <p>
                     Exploration of next-generation computing architectures,
-                    performance systems and scalable platforms.
+                    high-performance systems and scalable platforms designed
+                    for future workloads.
                 </p>
+
             </div>
 
             <div class="card">
+
                 <h3>Semiconductor Systems</h3>
+
                 <p>
-                    Future hardware technologies and intelligent computing
-                    foundations designed for long-term impact.
+                    Research and development initiatives focused on future
+                    hardware architectures and intelligent computing
+                    foundations.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Edge Intelligence</h3>
+
+                <p>
+                    Distributed intelligence operating closer to devices,
+                    users and real-world environments where decisions matter.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Cloud Platforms</h3>
+
+                <p>
+                    Scalable infrastructure enabling deployment,
+                    orchestration and lifecycle management of intelligent
+                    applications.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Intelligent Automation</h3>
+
+                <p>
+                    Systems that combine sensing, computation and
+                    decision-making to improve productivity and operational
+                    efficiency.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="research">
+
+    <div class="container">
+
+        <div class="section-label">
+            Research & Innovation
+        </div>
+
+        <h2>
+            Long-Term Technology Themes
+        </h2>
+
+        <p style="max-width:850px;margin-bottom:50px;">
+            HINDCHIP is focused on technology domains expected to shape the
+            future of computing, intelligence and digital infrastructure over
+            the coming decades.
+        </p>
+
+        <div class="cards-3">
+
+            <div class="card">
+                <h3>Artificial Intelligence</h3>
+                <p>
+                    Next-generation machine learning systems, intelligent
+                    agents and scalable AI architectures.
                 </p>
             </div>
 
             <div class="card">
-                <h3>Edge Intelligence</h3>
+                <h3>Computing Infrastructure</h3>
+                <p>
+                    Foundational platforms supporting enterprise, industrial
+                    and national-scale intelligent workloads.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Future Hardware</h3>
+                <p>
+                    Exploration of emerging hardware technologies and
+                    intelligent computing architectures.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Edge Computing</h3>
                 <p>
                     Distributed intelligence operating closer to users,
-                    devices and real-world environments.
+                    devices and data sources.
                 </p>
             </div>
 
             <div class="card">
-                <h3>Cloud Platforms</h3>
+                <h3>Sustainable Computing</h3>
                 <p>
-                    Infrastructure and services enabling large-scale
-                    deployment of intelligent systems.
+                    Energy-efficient approaches to future computing systems
+                    and infrastructure.
                 </p>
             </div>
 
             <div class="card">
-                <h3>Intelligent Automation</h3>
+                <h3>Human-Centered Technology</h3>
                 <p>
-                    Combining sensing, computation and decision-making
-                    technologies to improve productivity.
+                    Technologies designed to improve productivity,
+                    accessibility and human capability.
                 </p>
             </div>
 
@@ -580,50 +622,66 @@ footer{
 
 </section>
 
-<section id="research">
+<section id="ecosystem">
 
     <div class="container">
 
         <div class="section-label">
-            Research Themes
+            Ecosystem
         </div>
 
-        <h2 class="section-title">
-            Long-Term Innovation Areas
+        <h2>
+            Building With Industry, Academia And Research
         </h2>
 
-        <div class="grid research-grid">
+        <div class="cards-3">
 
             <div class="card">
-                <h3>Artificial Intelligence</h3>
+                <h3>Industry</h3>
+                <p>
+                    Supporting enterprises adopting advanced computing and
+                    intelligent technologies.
+                </p>
             </div>
 
             <div class="card">
-                <h3>Edge Computing</h3>
+                <h3>Universities</h3>
+                <p>
+                    Enabling collaboration across education, research and
+                    capability development.
+                </p>
             </div>
 
             <div class="card">
-                <h3>Advanced Architectures</h3>
+                <h3>Research Institutions</h3>
+                <p>
+                    Encouraging long-term innovation through scientific and
+                    engineering partnerships.
+                </p>
             </div>
 
             <div class="card">
-                <h3>Intelligent Systems</h3>
+                <h3>Government</h3>
+                <p>
+                    Contributing to strategic technology priorities and
+                    digital transformation initiatives.
+                </p>
             </div>
 
             <div class="card">
-                <h3>Computing Infrastructure</h3>
+                <h3>Developers</h3>
+                <p>
+                    Empowering builders creating future intelligent systems
+                    and applications.
+                </p>
             </div>
 
             <div class="card">
-                <h3>Future Hardware</h3>
-            </div>
-
-            <div class="card">
-                <h3>Sustainable Computing</h3>
-            </div>
-
-            <div class="card">
-                <h3>Human-Centered Technology</h3>
+                <h3>Startups</h3>
+                <p>
+                    Supporting innovation ecosystems that accelerate
+                    technology creation and adoption.
+                </p>
             </div>
 
         </div>
@@ -639,57 +697,63 @@ footer{
             Future Applications
         </div>
 
-        <h2 class="section-title">
-            Impact Across Sectors
+        <h2>
+            Computing Technologies With Real-World Impact
         </h2>
 
-        <div class="grid application-grid">
+        <p style="max-width:850px;margin-bottom:50px;">
+            Advanced computing systems have the potential to transform
+            critical sectors of the economy, improve productivity and
+            enable new forms of innovation across society.
+        </p>
+
+        <div class="cards-3">
 
             <div class="card">
                 <h3>Agriculture Intelligence</h3>
                 <p>
-                    Improving productivity, resilience and decision-making
-                    through intelligent technologies.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Climate Intelligence</h3>
-                <p>
-                    Supporting environmental monitoring, forecasting and
-                    preparedness systems.
+                    Supporting precision agriculture, forecasting and
+                    data-driven decision making for improved productivity.
                 </p>
             </div>
 
             <div class="card">
                 <h3>Healthcare Technologies</h3>
                 <p>
-                    Enabling future healthcare delivery, diagnostics and
-                    research through advanced computing.
+                    Accelerating diagnostics, medical research and future
+                    healthcare delivery systems.
                 </p>
             </div>
 
             <div class="card">
                 <h3>Education & Skills</h3>
                 <p>
-                    Expanding access to learning, knowledge and capability
-                    development.
+                    Expanding access to knowledge, personalized learning and
+                    workforce capability development.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Climate Intelligence</h3>
+                <p>
+                    Supporting environmental monitoring, prediction and
+                    sustainability initiatives.
                 </p>
             </div>
 
             <div class="card">
                 <h3>Industrial Systems</h3>
                 <p>
-                    Driving productivity and intelligent automation across
-                    manufacturing and industry.
+                    Enabling intelligent manufacturing, automation and
+                    operational efficiency.
                 </p>
             </div>
 
             <div class="card">
-                <h3>Smart Infrastructure</h3>
+                <h3>Digital Infrastructure</h3>
                 <p>
-                    Supporting future cities, utilities and digital public
-                    infrastructure.
+                    Strengthening the technological foundations required for
+                    future economic growth.
                 </p>
             </div>
 
@@ -699,22 +763,77 @@ footer{
 
 </section>
 
+<section id="roadmap">
+
+    <div class="container">
+
+        <div class="section-label">
+            Strategic Roadmap
+        </div>
+
+        <h2>
+            Long-Term Technology Journey
+        </h2>
+
+        <div class="cards-3">
+
+            <div class="card">
+
+                <h3>2025</h3>
+
+                <p>
+                    Foundation of HindChip and development of long-term
+                    technology vision, research priorities and platform
+                    strategy.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>2026–2027</h3>
+
+                <p>
+                    Expansion of AI infrastructure initiatives, intelligent
+                    systems research and ecosystem development.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>2028+</h3>
+
+                <p>
+                    Exploration of advanced computing systems and future
+                    semiconductor technology opportunities.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 <section id="vision">
 
-    <div class="container" style="text-align:center;">
+    <div class="container">
 
         <div class="section-label">
             Vision
         </div>
 
-        <h2 class="section-title">
+        <h2>
             Building The Computing Foundation For India's Intelligent Future
         </h2>
 
-        <p class="section-description" style="margin:auto;">
-            To help India become a creator of world-class computing
-            technologies, intelligent infrastructure and future semiconductor
-            systems.
+        <p style="max-width:900px;">
+            HINDCHIP envisions a future where India is not only a consumer of
+            advanced computing technologies but also a creator of world-class
+            infrastructure, intelligent systems and semiconductor innovations.
+            Our long-term goal is to contribute to the foundations that power
+            future generations of technology, industry and scientific progress.
         </p>
 
     </div>
@@ -723,19 +842,45 @@ footer{
 
 <section id="founder">
 
-    <div class="container" style="text-align:center;">
+    <div class="container">
 
         <div class="section-label">
             Founder
         </div>
 
-        <h2 class="section-title">
-            Kastuv Bhaduri
-        </h2>
+        <div class="two-column">
 
-        <p class="section-description" style="margin:auto;">
-            Building India's AI Computing Future.
-        </p>
+            <div>
+
+                <h2>
+                    Kastuv Bhaduri
+                </h2>
+
+                <p>
+                    Founder, Hindustan Chip Technologies Private Limited
+                </p>
+
+            </div>
+
+            <div>
+
+                <p>
+                    HindChip was founded with the belief that advanced
+                    computing infrastructure will become one of the defining
+                    technologies of the 21st century. The company's mission is
+                    to help strengthen India's long-term capabilities in AI,
+                    advanced computing and future semiconductor systems.
+                </p>
+
+                <br>
+
+                <p>
+                    Building India's AI Computing Future.
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
 
@@ -745,23 +890,33 @@ footer{
 
     <div class="container">
 
-        <div class="card" style="text-align:center;">
+        <div class="card contact-card">
 
             <div class="section-label">
                 Contact
             </div>
 
-            <h2 class="section-title">
+            <h2>
                 Let's Build The Future
             </h2>
 
-            <p class="section-description" style="margin:auto;">
+            <p>
                 founder@hindchip.com
-                <br><br>
+            </p>
+
+            <p>
                 https://hindchip.com
-                <br><br>
+            </p>
+
+            <p>
                 Hindustan Chip Technologies Private Limited
             </p>
+
+            <br>
+
+            <a href="mailto:founder@hindchip.com" class="btn btn-primary">
+                Contact HindChip
+            </a>
 
         </div>
 
@@ -769,30 +924,43 @@ footer{
 
 </section>
 
-<footer>
+<footer class="footer">
 
     <div class="container">
 
         <img
             src="assets/hc-monogram.svg"
-            alt="HINDCHIP"
-            class="footer-logo">
+            alt="HINDCHIP">
 
-        <div class="footer-title">
+        <h3 style="
+            font-size:2rem;
+            margin-bottom:10px;
+            font-weight:800;">
             HINDCHIP
-        </div>
+        </h3>
 
-        <div class="footer-tag">
-            AI Computing For India
-        </div>
+        <p style="
+            color:#0d86ff;
+            margin-bottom:20px;
+            letter-spacing:2px;">
+            AI COMPUTING FOR INDIA
+        </p>
 
-        <div class="footer-text">
+        <p>
             Hindustan Chip Technologies Private Limited
-            <br>
-            Building India's AI Computing Future
-            <br><br>
+        </p>
+
+        <br>
+
+        <p>
+            Building India's Next Generation Computing Infrastructure
+        </p>
+
+        <br>
+
+        <p>
             © 2025 HINDCHIP. All Rights Reserved.
-        </div>
+        </p>
 
     </div>
 
