@@ -1,0 +1,30 @@
+<svg width="1400" height="700" viewBox="0 0 1400 700" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="700" fill="#040F1A"/>
+
+  <g transform="translate(380,70)">
+    <rect x="0" y="40" width="42" height="260" fill="#008BFF"/>
+    <rect x="42" y="150" width="110" height="42" fill="#008BFF"/>
+    <path d="M190 90 L240 40 H420 L460 80 H300 L220 160 V190 L300 270 H460 L420 310 H240 L190 260 L150 220 L190 180 Z"
+          fill="#008BFF"/>
+  </g>
+
+  <text x="700" y="500"
+        text-anchor="middle"
+        fill="#FFFFFF"
+        font-family="Inter, Arial, sans-serif"
+        font-size="120"
+        font-weight="700"
+        letter-spacing="8">
+    HINDCHIP
+  </text>
+
+  <text x="700" y="580"
+        text-anchor="middle"
+        fill="#008BFF"
+        font-family="Inter, Arial, sans-serif"
+        font-size="42"
+        font-weight="500"
+        letter-spacing="10">
+    AI COMPUTING FOR INDIA
+  </text>
+</svg>
