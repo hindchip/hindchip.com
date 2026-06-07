@@ -1,81 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HindChip | AI Computing for India</title>
-
-<style>
+<title>HindChip | AI Computing for India</title><style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
 body{
-margin:0;
 font-family:Arial, Helvetica, sans-serif;
-background:#070b14;
+background:#050A14;
 color:white;
+line-height:1.6;
+}
+
+header{
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+color:#0A66FF;
+letter-spacing:1px;
 }
 
 .hero{
-height:100vh;
+min-height:90vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
+padding:40px 20px;
 }
 
-h1{
-font-size:48px;
+.hero h1{
+font-size:56px;
 margin-bottom:20px;
-color:#1e63ff;
+max-width:1000px;
 }
 
 .tagline{
-font-size:22px;
+font-size:26px;
 font-weight:bold;
-margin-bottom:20px;
+margin-bottom:30px;
+}
+
+.tagline span{
+color:#0A66FF;
 }
 
 .subtitle{
-max-width:800px;
-font-size:18px;
-color:#cccccc;
-line-height:1.7;
+max-width:900px;
+font-size:20px;
+color:#cfcfcf;
 }
 
 .button{
+display:inline-block;
 margin-top:40px;
-padding:14px 28px;
-background:#1e63ff;
+padding:16px 32px;
+background:#0A66FF;
 color:white;
 text-decoration:none;
-border-radius:8px;
+border-radius:10px;
 font-weight:bold;
 }
 
-</style>
+section{
+padding:90px 8%;
+}
 
-</head>
+.section-title{
+font-size:42px;
+margin-bottom:25px;
+color:#0A66FF;
+}
 
-<body>
+.content{
+max-width:900px;
+font-size:20px;
+color:#d0d0d0;
+}
 
-<section class="hero">
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:24px;
+margin-top:40px;
+}
 
-<h1>HINDCHIP</h1>
+.card{
+background:#0b1220;
+padding:30px;
+border-radius:16px;
+border:1px solid rgba(255,255,255,0.08);
+}
 
-<div class="tagline">
-AI COMPUTING FOR INDIA
-</div>
+.card h3{
+margin-bottom:15px;
+color:white;
+}
 
-<div class="subtitle">
-Building affordable, intelligent and self-reliant AI computing platforms designed for India's next generation of innovation.
-</div>
+footer{
+padding:60px 8%;
+text-align:center;
+border-top:1px solid rgba(255,255,255,0.08);
+}
 
-<a class="button" href="mailto:founder@hindchip.com">
+.footer-title{
+font-size:28px;
+color:#0A66FF;
+margin-bottom:10px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.section-title{
+font-size:32px;
+}
+
+.subtitle,
+.content{
+font-size:18px;
+}
+}
+</style></head><body><header>
+<div class="logo">HINDCHIP</div>
+</header><section class="hero"><h1>Building India's AI Computing Future</h1><div class="tagline">
+<span>AI</span> COMPUTING FOR INDIA
+</div><div class="subtitle">
+Building affordable and self-reliant AI computing technologies designed for India's next generation of innovation.
+</div><a href="mailto:founder@hindchip.com" class="button">
 Contact Us
-</a>
-
-</section>
-
-</body>
+</a></section><section><h2 class="section-title">Why HindChip</h2><div class="content">
+India's future will be shaped by artificial intelligence, edge computing and semiconductor technologies. HindChip exists to help build affordable, intelligent and self-reliant computing technologies that empower India's growth.
+</div></section><section><h2 class="section-title">Focus Areas</h2><div class="cards"><div class="card">
+<h3>AI Computing Platforms</h3>
+<p>Foundational computing technologies designed for future intelligent systems.</p>
+</div><div class="card">
+<h3>Agriculture Intelligence</h3>
+<p>AI-powered solutions that help farmers improve productivity and resilience.</p>
+</div><div class="card">
+<h3>Climate Resilience</h3>
+<p>Early warning systems, environmental monitoring and flood intelligence.</p>
+</div><div class="card">
+<h3>Future Applications</h3>
+<p>Education, healthcare, industry and emerging sectors powered by AI.</p>
+</div></div></section><section><h2 class="section-title">Vision</h2><div class="content">
+To make advanced AI computing accessible, affordable and self-reliant for India, enabling innovators, businesses and communities to build solutions that address real-world challenges.
+</div></section><footer><div class="footer-title">
+HINDCHIP
+</div><p>AI Computing for India</p>
+<br>
+<p>founder@hindchip.com</p></footer></body>
 </html>
