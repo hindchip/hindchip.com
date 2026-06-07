@@ -1,0 +1,8 @@
+{
+  "name": "HINDCHIP",
+  "short_name": "HINDCHIP",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#040F1A",
+  "theme_color": "#008BFF"
+}
