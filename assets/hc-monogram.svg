@@ -1,0 +1,46 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <rect width="512" height="512" fill="none"/>
+
+  <g fill="#008BFF">
+
+    <!-- H -->
+    <rect x="70" y="90" width="46" height="260"/>
+
+    <path d="
+      M116 190
+      H220
+      L250 220
+      V260
+      H116
+      Z
+    "/>
+
+    <!-- C Top -->
+    <path d="
+      M250 140
+      L320 70
+      H450
+      L485 105
+      H350
+      L280 175
+      H235
+      V140
+      Z
+    "/>
+
+    <!-- C Bottom -->
+    <path d="
+      M235 275
+      H280
+      L350 345
+      H485
+      L450 380
+      H320
+      L250 310
+      Z
+    "/>
+
+  </g>
+
+</svg>
