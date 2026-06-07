@@ -1,0 +1,55 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+
+  <rect width="1200" height="630" fill="#040F1A"/>
+
+  <text
+    x="100"
+    y="150"
+    fill="#008BFF"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="38"
+    font-weight="700"
+    letter-spacing="4">
+    AI COMPUTING FOR INDIA
+  </text>
+
+  <text
+    x="100"
+    y="280"
+    fill="#FFFFFF"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="82"
+    font-weight="700">
+    Building India's Next
+  </text>
+
+  <text
+    x="100"
+    y="380"
+    fill="#FFFFFF"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="82"
+    font-weight="700">
+    Generation Computing
+  </text>
+
+  <text
+    x="100"
+    y="480"
+    fill="#FFFFFF"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="82"
+    font-weight="700">
+    Infrastructure
+  </text>
+
+  <text
+    x="100"
+    y="560"
+    fill="#A3B0BC"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="28">
+    Hindustan Chip Technologies Private Limited
+  </text>
+
+</svg>
