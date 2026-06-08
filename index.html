@@ -1128,11 +1128,94 @@ grid-template-columns:repeat(2,1fr);
 
 display:none;
 
+position:absolute;
+
+top:82px;
+left:0;
+
+width:100%;
+
+background:#020814;
+
+flex-direction:column;
+
+padding:30px 0;
+
+gap:25px;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+z-index:999;
+
+}
+
+.nav-links.active{
+
+display:flex;
+
 }
 
 .menu-toggle{
 
 display:block;
+
+font-size:2rem;
+
+cursor:pointer;
+
+color:white;
+
+}
+
+.metrics-grid,
+.grid-3,
+.grid-4,
+.research-grid,
+.ecosystem-grid,
+.applications-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.timeline-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.timeline::before{
+
+display:none;
+
+}
+
+.hero{
+
+padding-top:140px;
+
+}
+
+.hero h1{
+
+font-size:3.2rem;
+
+}
+
+.contact-panel,
+.vision-panel,
+.mission-panel,
+.founder-panel{
+
+padding:40px 28px;
+
+}
+
+.section{
+
+padding:100px 0;
+
+}
 
 }
   .nav-links.active{
